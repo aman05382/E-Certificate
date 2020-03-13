@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Certificate Download</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/nunito-font.css">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="css/style.css" />
+	<style>
+		select {
+
+			width: 100%;
+			padding: 14.5px 0px 14.5px 30px;
+			border: 2px solid #ccc;
+			appearance: unset;
+			-moz-appearance: unset;
+			-webkit-appearance: unset;
+			-o-appearance: unset;
+			-ms-appearance: unset;
+			outline: none;
+			-moz-outline: none;
+			-webkit-outline: none;
+			-o-outline: none;
+			-ms-outline: none;
+			border-radius: 27.5px;
+			-o-border-radius: 27.5px;
+			-ms-border-radius: 27.5px;
+			-moz-border-radius: 27.5px;
+			-webkit-border-radius: 27.5px;
+			font-family: 'Nunito', sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			background: rgba(255, 255, 255, 0.2)
+		}
+	</style>
+	
+</head>
+
+<body class="form-v9">
+	<div class="page-content">
+		<div class="form-v9-content" style="background-image: url('images/form-v9.jpg')">
+			<form class="form-detail" action="register.php" method="post">
+				<h2>Certificate Download</h2>
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="text" name="name" id="full-name" class="input-text" placeholder="Your Name"
+							required>
+					</div>
+					<div class="form-row">
+						<input type="text" name="email" id="your-email" class="input-text" placeholder="Your Email"
+							required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+					</div>
+				</div>
+				<div class="form-row-total">
+					<div class="form-row">
+						<select name="post">
+							<option value="Graphic Designer">Graphic Designer</option>
+							<option value="Web Development">Web Development</option>
+							<option value="Online Promotion">Online Promotion</option>
+						</select>
+						<span id="postHelpBlock" class="form-text text-muted">Choose Post</span>
+					</div>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="submit" class="register" value="Submit">
+				</div>
+			</form>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
